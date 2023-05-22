@@ -37,7 +37,7 @@
     const backBtn = document.getElementById("back-btn");
 
     async function fetchJobListing(id) {
-      const response = await fetch("../data/listings.json");
+      const response = await fetch("./data/listings.json");
       const jobListings = await response.json();
       const job = jobListings.find((item) => item.id === id);
 
